@@ -1,0 +1,15 @@
+{
+    "printWidth": 140,
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": false,
+    "quoteProps": "consistent",
+    "jsxSingleQuote": false,
+    "trailingComma": "all",
+    "bracketSameLine": false,
+    "endOfLine": "lf",
+    "proseWrap": "always",
+    "htmlWhitespaceSensitivity": "strict",
+    "attributeGroups": ["^(id|name)$", "^class(Name)?$", "^on.*", "$DEFAULT", "^aria-", "^data-"],
+    "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-css-order", "prettier-plugin-organize-attributes"]
+}
