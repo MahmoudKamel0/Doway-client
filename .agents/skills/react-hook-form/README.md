@@ -4,7 +4,8 @@ Performance optimization guidelines for React Hook Form applications.
 
 ## Overview
 
-This skill provides 41 performance rules across 8 categories, designed to help AI agents and developers write performant React Hook Form code.
+This skill provides 41 performance rules across 8 categories, designed to help AI agents and developers write performant React Hook Form
+code.
 
 ### Directory Structure
 
@@ -51,16 +52,16 @@ pnpm validate
 
 1. Choose the appropriate category prefix:
 
-| Category | Prefix | Impact |
-|----------|--------|--------|
-| Form Configuration | `config-` | CRITICAL |
-| Field Subscription | `sub-` | CRITICAL |
-| Controlled Components | `ctrl-` | HIGH |
-| Validation Patterns | `valid-` | HIGH |
-| Field Arrays | `array-` | MEDIUM-HIGH |
-| State Management | `state-` | MEDIUM |
-| Integration Patterns | `integ-` | MEDIUM |
-| Advanced Patterns | `adv-` | LOW |
+| Category              | Prefix    | Impact      |
+| --------------------- | --------- | ----------- |
+| Form Configuration    | `config-` | CRITICAL    |
+| Field Subscription    | `sub-`    | CRITICAL    |
+| Controlled Components | `ctrl-`   | HIGH        |
+| Validation Patterns   | `valid-`  | HIGH        |
+| Field Arrays          | `array-`  | MEDIUM-HIGH |
+| State Management      | `state-`  | MEDIUM      |
+| Integration Patterns  | `integ-`  | MEDIUM      |
+| Advanced Patterns     | `adv-`    | LOW         |
 
 2. Create a new file: `rules/{prefix}-{description}.md`
 
@@ -82,15 +83,11 @@ Brief explanation of WHY this matters (1-3 sentences).
 
 **Incorrect (description of problem):**
 
-\`\`\`typescript
-// Bad code with comment on key line
-\`\`\`
+\`\`\`typescript // Bad code with comment on key line \`\`\`
 
 **Correct (description of solution):**
 
-\`\`\`typescript
-// Good code with minimal diff from incorrect
-\`\`\`
+\`\`\`typescript // Good code with minimal diff from incorrect \`\`\`
 
 Reference: [Documentation Link](https://example.com)
 ```
@@ -103,26 +100,27 @@ Rules follow the pattern: `{prefix}-{slug}.md`
 - **slug**: Kebab-case description of the rule
 
 Examples:
+
 - `config-validation-mode.md`
 - `sub-usewatch-over-watch.md`
 - `ctrl-usecontroller-isolation.md`
 
 ## Impact Levels
 
-| Level | Description |
-|-------|-------------|
-| CRITICAL | Cascade effect on entire form performance |
-| HIGH | Significant impact on specific operations |
-| MEDIUM-HIGH | Notable improvement for common patterns |
-| MEDIUM | Measurable improvement in specific scenarios |
-| LOW-MEDIUM | Minor optimization for edge cases |
-| LOW | Best practice with minimal performance impact |
+| Level       | Description                                   |
+| ----------- | --------------------------------------------- |
+| CRITICAL    | Cascade effect on entire form performance     |
+| HIGH        | Significant impact on specific operations     |
+| MEDIUM-HIGH | Notable improvement for common patterns       |
+| MEDIUM      | Measurable improvement in specific scenarios  |
+| LOW-MEDIUM  | Minor optimization for edge cases             |
+| LOW         | Best practice with minimal performance impact |
 
 ## Scripts
 
-| Command | Description |
-|---------|-------------|
-| `pnpm build` | Compile rules into AGENTS.md |
+| Command         | Description                            |
+| --------------- | -------------------------------------- |
+| `pnpm build`    | Compile rules into AGENTS.md           |
 | `pnpm validate` | Check skill against quality guidelines |
 
 ## Contributing

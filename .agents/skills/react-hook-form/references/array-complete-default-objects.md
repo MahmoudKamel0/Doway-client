@@ -7,7 +7,8 @@ tags: array, useFieldArray, append, default-values
 
 ## Provide Complete Default Objects for Field Array Operations
 
-When using `append()`, `prepend()`, `insert()`, or `update()`, always provide complete field objects with all required properties. Empty or partial objects cause validation and data inconsistencies.
+When using `append()`, `prepend()`, `insert()`, or `update()`, always provide complete field objects with all required properties. Empty or
+partial objects cause validation and data inconsistencies.
 
 **Incorrect (empty object causes undefined fields):**
 

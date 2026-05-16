@@ -7,7 +7,8 @@ tags: ctrl, useController, local-state, ui-state
 
 ## Combine Local State with useController for UI-Only State
 
-It's valid to combine useController with local useState for UI-only state (like dropdown open/closed, formatting preview). Keep form data in useController and UI state separate.
+It's valid to combine useController with local useState for UI-only state (like dropdown open/closed, formatting preview). Keep form data in
+useController and UI state separate.
 
 **Incorrect (mixing UI state into form state):**
 

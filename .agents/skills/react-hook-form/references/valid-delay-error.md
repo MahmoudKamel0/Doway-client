@@ -7,7 +7,8 @@ tags: valid, delayError, debounce, user-experience
 
 ## Use delayError to Debounce Rapid Error Display
 
-When using `onChange` mode, errors appear and disappear rapidly as users type. Use `delayError` to add a small delay, preventing UI flicker while still providing timely feedback.
+When using `onChange` mode, errors appear and disappear rapidly as users type. Use `delayError` to add a small delay, preventing UI flicker
+while still providing timely feedback.
 
 **Incorrect (errors flash rapidly during typing):**
 
@@ -45,6 +46,7 @@ function SearchForm() {
 ```
 
 **When to use:**
+
 - Real-time validation with `onChange` mode
 - Fields with character count requirements
 - Search inputs with minimum length

@@ -1,12 +1,12 @@
 name: Release-Version
 
-on: 
+on:
     push:
         branches:
-          - main
+            - main
 
 jobs:
-    release: 
+    release:
         runs-on: ubuntu-latest
 
         steps:

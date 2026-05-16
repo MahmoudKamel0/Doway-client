@@ -7,7 +7,8 @@ tags: integ, mui, material-ui, Controller
 
 ## Use Controller for Material-UI Components
 
-Material-UI components are controlled by design. Use Controller to wrap them, handling the onChange event object correctly (MUI passes the event, not the value directly).
+Material-UI components are controlled by design. Use Controller to wrap them, handling the onChange event object correctly (MUI passes the
+event, not the value directly).
 
 **Incorrect (register doesn't work with MUI controlled components):**
 

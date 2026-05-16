@@ -7,7 +7,8 @@ tags: ctrl, Controller, field-props, ui-libraries
 
 ## Wire Controller Field Props Correctly for UI Libraries
 
-Different UI libraries expect different prop names. Map Controller's field props correctly: `onChange` sends data back, `onBlur` reports interaction, `value` sets the display, `ref` enables focus on error.
+Different UI libraries expect different prop names. Map Controller's field props correctly: `onChange` sends data back, `onBlur` reports
+interaction, `value` sets the display, `ref` enables focus on error.
 
 **Incorrect (spreading field on incompatible component):**
 
@@ -49,6 +50,7 @@ function FormWithSelect({ control }: { control: Control<FormData> }) {
 ```
 
 **Common mappings by library:**
+
 - MUI Select: `value`, `onChange` (receives event)
 - Radix/shadcn Select: `value`, `onValueChange` (receives value directly)
 - React Select: `value`, `onChange` (receives option object)

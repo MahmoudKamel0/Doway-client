@@ -7,7 +7,8 @@ tags: ctrl, useController, controlled-components, re-renders
 
 ## Use useController for Re-render Isolation in Controlled Components
 
-useController creates a controlled input that only re-renders when its specific field value changes. This is essential for integrating with UI libraries like MUI, Ant Design, or custom components.
+useController creates a controlled input that only re-renders when its specific field value changes. This is essential for integrating with
+UI libraries like MUI, Ant Design, or custom components.
 
 **Incorrect (inline Controller causes parent re-renders):**
 

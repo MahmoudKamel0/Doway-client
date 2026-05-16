@@ -7,7 +7,8 @@ tags: formcfg, async, default-values, data-fetching
 
 ## Use Async defaultValues for Server Data
 
-React Hook Form supports async functions for `defaultValues`, eliminating the need for manual useEffect + reset() patterns when loading initial data from an API.
+React Hook Form supports async functions for `defaultValues`, eliminating the need for manual useEffect + reset() patterns when loading
+initial data from an API.
 
 **Incorrect (manual useEffect reset pattern):**
 

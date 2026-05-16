@@ -1,15 +1,20 @@
 ---
 name: zod
-description: Zod schema validation best practices for type safety, parsing, and error handling. This skill should be used when defining z.object schemas, using z.string validations, safeParse, or z.infer. This skill does NOT cover React Hook Form integration patterns (use react-hook-form skill) or OpenAPI client generation (use orval skill).
+description:
+    Zod schema validation best practices for type safety, parsing, and error handling. This skill should be used when defining z.object
+    schemas, using z.string validations, safeParse, or z.infer. This skill does NOT cover React Hook Form integration patterns (use
+    react-hook-form skill) or OpenAPI client generation (use orval skill).
 ---
 
 # Zod Best Practices
 
-Comprehensive schema validation guide for Zod in TypeScript applications. Contains 43 rules across 8 categories, prioritized by impact to guide automated refactoring and code generation.
+Comprehensive schema validation guide for Zod in TypeScript applications. Contains 43 rules across 8 categories, prioritized by impact to
+guide automated refactoring and code generation.
 
 ## When to Apply
 
 Reference these guidelines when:
+
 - Writing new Zod schemas
 - Choosing between parse() and safeParse()
 - Implementing type inference with z.infer
@@ -21,16 +26,16 @@ Reference these guidelines when:
 
 ## Rule Categories by Priority
 
-| Priority | Category | Impact | Prefix |
-|----------|----------|--------|--------|
-| 1 | Schema Definition | CRITICAL | `schema-` |
-| 2 | Parsing & Validation | CRITICAL | `parse-` |
-| 3 | Type Inference | HIGH | `type-` |
-| 4 | Error Handling | HIGH | `error-` |
-| 5 | Object Schemas | MEDIUM-HIGH | `object-` |
-| 6 | Schema Composition | MEDIUM | `compose-` |
-| 7 | Refinements & Transforms | MEDIUM | `refine-` |
-| 8 | Performance & Bundle | LOW-MEDIUM | `perf-` |
+| Priority | Category                 | Impact      | Prefix     |
+| -------- | ------------------------ | ----------- | ---------- |
+| 1        | Schema Definition        | CRITICAL    | `schema-`  |
+| 2        | Parsing & Validation     | CRITICAL    | `parse-`   |
+| 3        | Type Inference           | HIGH        | `type-`    |
+| 4        | Error Handling           | HIGH        | `error-`   |
+| 5        | Object Schemas           | MEDIUM-HIGH | `object-`  |
+| 6        | Schema Composition       | MEDIUM      | `compose-` |
+| 7        | Refinements & Transforms | MEDIUM      | `refine-`  |
+| 8        | Performance & Bundle     | LOW-MEDIUM  | `perf-`    |
 
 ## Quick Reference
 

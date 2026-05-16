@@ -7,7 +7,8 @@ tags: integ, shadcn, imports, Form-component
 
 ## Verify shadcn Form Component Import Source
 
-React Hook Form exports its own `<Form>` component. When using shadcn/ui, ensure you import the shadcn Form wrapper, not RHF's Form. Auto-imports often get this wrong.
+React Hook Form exports its own `<Form>` component. When using shadcn/ui, ensure you import the shadcn Form wrapper, not RHF's Form.
+Auto-imports often get this wrong.
 
 **Incorrect (imports RHF Form instead of shadcn):**
 

@@ -7,7 +7,8 @@ tags: adv, devtools, performance, debugging
 
 ## Disable DevTools in Production and During Performance Testing
 
-React Hook Form DevTools can cause performance issues, especially with FormProvider. Always disable in production and temporarily remove when profiling performance.
+React Hook Form DevTools can cause performance issues, especially with FormProvider. Always disable in production and temporarily remove
+when profiling performance.
 
 **Incorrect (DevTools enabled regardless of environment):**
 

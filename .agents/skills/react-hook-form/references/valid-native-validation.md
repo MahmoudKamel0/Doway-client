@@ -7,7 +7,8 @@ tags: valid, native-validation, browser, performance
 
 ## Consider Native Validation for Simple Forms
 
-For simple forms with basic constraints (required, minLength, pattern), browser-native validation eliminates JavaScript validation overhead. Enable with `shouldUseNativeValidation`.
+For simple forms with basic constraints (required, minLength, pattern), browser-native validation eliminates JavaScript validation overhead.
+Enable with `shouldUseNativeValidation`.
 
 **Incorrect (JavaScript validates simple constraints):**
 
@@ -53,6 +54,7 @@ function NewsletterForm() {
 ```
 
 **When NOT to use:**
+
 - Custom error message styling required
 - Complex cross-field validation
 - Need consistent UX across browsers

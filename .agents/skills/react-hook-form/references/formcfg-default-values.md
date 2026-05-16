@@ -7,7 +7,8 @@ tags: formcfg, default-values, initialization, useForm
 
 ## Always Provide defaultValues for Form Initialization
 
-Omitting `defaultValues` causes undefined state conflicts with controlled components and breaks `reset()` functionality. Always provide explicit defaults, using empty strings instead of undefined.
+Omitting `defaultValues` causes undefined state conflicts with controlled components and breaks `reset()` functionality. Always provide
+explicit defaults, using empty strings instead of undefined.
 
 **Incorrect (no defaultValues, breaks reset and controlled components):**
 

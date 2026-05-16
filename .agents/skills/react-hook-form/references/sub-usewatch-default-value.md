@@ -7,7 +7,8 @@ tags: sub, useWatch, default-value, hydration
 
 ## Provide defaultValue to useWatch for Initial Render
 
-useWatch returns undefined on the first render before the subscription is established. Provide a defaultValue to prevent undefined checks and potential UI flicker.
+useWatch returns undefined on the first render before the subscription is established. Provide a defaultValue to prevent undefined checks
+and potential UI flicker.
 
 **Incorrect (undefined on first render):**
 

@@ -7,7 +7,8 @@ tags: array, useFieldArray, virtualization, FormProvider
 
 ## Use FormProvider for Virtualized Field Arrays
 
-When using virtualization libraries (react-window, react-virtuoso) with field arrays, fields exiting the viewport lose their DOM reference. Use FormProvider with useFormContext to maintain state across virtualization boundaries.
+When using virtualization libraries (react-window, react-virtuoso) with field arrays, fields exiting the viewport lose their DOM reference.
+Use FormProvider with useFormContext to maintain state across virtualization boundaries.
 
 **Incorrect (direct props break with virtualization):**
 

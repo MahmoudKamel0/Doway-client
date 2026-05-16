@@ -7,7 +7,8 @@ tags: sub, useWatch, watch, re-renders, subscription
 
 ## Use useWatch Instead of watch for Isolated Re-renders
 
-The `watch()` method triggers re-renders at the useForm hook level, affecting the entire form component. Use `useWatch()` in child components to isolate re-renders to only the components that need the watched value.
+The `watch()` method triggers re-renders at the useForm hook level, affecting the entire form component. Use `useWatch()` in child
+components to isolate re-renders to only the components that need the watched value.
 
 **Incorrect (watch at root causes entire form to re-render):**
 

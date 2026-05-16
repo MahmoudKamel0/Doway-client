@@ -1,14 +1,15 @@
 # Sections
 
-This file defines all sections, their ordering, impact levels, and descriptions.
-The section ID (in parentheses) is the filename prefix used to group rules.
+This file defines all sections, their ordering, impact levels, and descriptions. The section ID (in parentheses) is the filename prefix used
+to group rules.
 
 ---
 
 ## 1. Eliminating Waterfalls (async)
 
 **Impact:** CRITICAL  
-**Description:** Waterfalls are the #1 performance killer. Each sequential await adds full network latency. Eliminating them yields the largest gains.
+**Description:** Waterfalls are the #1 performance killer. Each sequential await adds full network latency. Eliminating them yields the
+largest gains.
 
 ## 2. Bundle Size Optimization (bundle)
 

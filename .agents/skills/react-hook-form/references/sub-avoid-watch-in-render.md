@@ -7,7 +7,8 @@ tags: sub, watch, getValues, render, one-time-read
 
 ## Avoid Calling watch() in Render for One-Time Reads
 
-If you only need to read a value once (not subscribe to changes), use `getValues()` instead of `watch()`. Calling watch() creates a subscription that triggers re-renders on every change.
+If you only need to read a value once (not subscribe to changes), use `getValues()` instead of `watch()`. Calling watch() creates a
+subscription that triggers re-renders on every change.
 
 **Incorrect (watch creates subscription for one-time read):**
 
@@ -42,6 +43,7 @@ function SubmitButton() {
 ```
 
 **When to use each:**
+
 - `watch()`: Need to react to value changes (display, conditional rendering)
 - `getValues()`: Need current value at a point in time (event handlers, submit)
 
