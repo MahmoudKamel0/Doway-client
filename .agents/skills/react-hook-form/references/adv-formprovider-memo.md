@@ -7,7 +7,8 @@ tags: adv, FormProvider, memo, optimization
 
 ## Wrap FormProvider Children with React.memo
 
-FormProvider triggers re-renders on form state updates. Wrap expensive child components with `React.memo` to prevent unnecessary re-renders when their props haven't changed.
+FormProvider triggers re-renders on form state updates. Wrap expensive child components with `React.memo` to prevent unnecessary re-renders
+when their props haven't changed.
 
 **Incorrect (children re-render on any form state change):**
 

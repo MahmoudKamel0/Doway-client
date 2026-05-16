@@ -7,7 +7,8 @@ tags: valid, errors, optional-chaining, nested-fields
 
 ## Access Errors via Optional Chaining or Lodash Get
 
-Error objects can have deeply nested paths for nested fields. Use optional chaining or lodash `get()` to safely access error messages without runtime errors.
+Error objects can have deeply nested paths for nested fields. Use optional chaining or lodash `get()` to safely access error messages
+without runtime errors.
 
 **Incorrect (direct access throws on undefined):**
 

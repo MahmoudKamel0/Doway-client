@@ -7,7 +7,8 @@ tags: formstate, useFormState, name, specific-fields
 
 ## Subscribe to Specific Field Names in useFormState
 
-useFormState accepts a `name` option to subscribe only to specific field state changes. Without it, the component re-renders on any field's state change.
+useFormState accepts a `name` option to subscribe only to specific field state changes. Without it, the component re-renders on any field's
+state change.
 
 **Incorrect (subscribes to all field state changes):**
 
@@ -46,9 +47,9 @@ function PasswordStrengthIndicator({ control }: { control: Control }) {
 
 ```typescript
 const { errors } = useFormState({
-  control,
-  name: ['email', 'password'],  // Subscribe to multiple specific fields
-})
+    control,
+    name: ["email", "password"], // Subscribe to multiple specific fields
+});
 ```
 
 Reference: [useFormState](https://react-hook-form.com/docs/useformstate)

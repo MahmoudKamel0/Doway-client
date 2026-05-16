@@ -7,7 +7,8 @@ tags: formcfg, should-unregister, dynamic-forms, memory
 
 ## Enable shouldUnregister for Dynamic Form Memory Efficiency
 
-By default, unmounted fields retain their values and validation state. For forms with frequently added/removed fields, enable `shouldUnregister` to automatically clean up unmounted fields.
+By default, unmounted fields retain their values and validation state. For forms with frequently added/removed fields, enable
+`shouldUnregister` to automatically clean up unmounted fields.
 
 **Incorrect (unmounted fields persist in memory):**
 
@@ -56,6 +57,7 @@ function MultiStepForm() {
 ```
 
 **When NOT to use:**
+
 - Multi-step wizards where you need to preserve values across steps
 - Conditional fields that should retain values when hidden
 

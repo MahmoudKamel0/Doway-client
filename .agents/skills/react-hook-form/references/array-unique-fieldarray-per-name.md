@@ -7,7 +7,8 @@ tags: array, useFieldArray, instance, state-management
 
 ## Use Single useFieldArray Instance Per Field Name
 
-Each field name should have only one useFieldArray instance. Multiple instances managing the same field name cause state conflicts and unpredictable behavior.
+Each field name should have only one useFieldArray instance. Multiple instances managing the same field name cause state conflicts and
+unpredictable behavior.
 
 **Incorrect (multiple instances for same field):**
 

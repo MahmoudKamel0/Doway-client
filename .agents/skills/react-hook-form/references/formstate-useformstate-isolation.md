@@ -7,7 +7,8 @@ tags: formstate, useFormState, isolation, re-renders
 
 ## Use useFormState for Isolated State Subscriptions
 
-useFormState allows subscribing to form state in child components without causing parent re-renders. Each useFormState instance is isolated and doesn't affect other subscribers.
+useFormState allows subscribing to form state in child components without causing parent re-renders. Each useFormState instance is isolated
+and doesn't affect other subscribers.
 
 **Incorrect (formState at root re-renders entire form):**
 

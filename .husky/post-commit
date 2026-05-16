@@ -1,0 +1,3 @@
+echo "-----------------------------------------------------------------"
+echo "commit completed successfully! Your changes have been committed."
+echo "-----------------------------------------------------------------"

@@ -7,7 +7,8 @@ tags: valid, resolver, schema, caching, zod
 
 ## Define Schema Outside Component for Resolver Caching
 
-Define validation schemas outside the component to enable resolver caching. Schemas defined inside components are recreated on every render, bypassing optimization.
+Define validation schemas outside the component to enable resolver caching. Schemas defined inside components are recreated on every render,
+bypassing optimization.
 
 **Incorrect (schema recreated on every render):**
 

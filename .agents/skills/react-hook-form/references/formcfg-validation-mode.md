@@ -7,7 +7,8 @@ tags: formcfg, validation-mode, re-renders, useForm
 
 ## Use onSubmit Mode for Optimal Performance
 
-The `mode` option in useForm determines when validation runs. Using `onChange` mode triggers validation on every keystroke, causing significant re-renders. Default to `onSubmit` unless real-time feedback is essential.
+The `mode` option in useForm determines when validation runs. Using `onChange` mode triggers validation on every keystroke, causing
+significant re-renders. Default to `onSubmit` unless real-time feedback is essential.
 
 **Incorrect (validates on every keystroke):**
 
@@ -44,6 +45,7 @@ function RegistrationForm() {
 ```
 
 **When to use other modes:**
+
 - `onBlur`: Validate when user leaves a field (good balance of UX and performance)
 - `onTouched`: Like `onBlur` but only after first interaction
 - `onChange`: Only when real-time validation feedback is critical (use sparingly)

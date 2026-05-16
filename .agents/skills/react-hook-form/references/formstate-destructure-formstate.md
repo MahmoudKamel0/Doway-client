@@ -7,7 +7,8 @@ tags: formstate, formState, destructure, proxy, subscription
 
 ## Destructure formState Properties Before Render
 
-formState is wrapped in a Proxy that tracks which properties you access. Destructure the specific properties you need before render to enable the subscription optimization. Assigning the entire object disables it.
+formState is wrapped in a Proxy that tracks which properties you access. Destructure the specific properties you need before render to
+enable the subscription optimization. Assigning the entire object disables it.
 
 **Incorrect (entire object assignment disables Proxy):**
 

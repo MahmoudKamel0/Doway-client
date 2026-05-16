@@ -7,7 +7,8 @@ tags: ctrl, useController, register, double-registration
 
 ## Avoid Double Registration with useController
 
-useController handles field registration automatically. Calling `register()` on a field already managed by useController creates duplicate state tracking and validation conflicts.
+useController handles field registration automatically. Calling `register()` on a field already managed by useController creates duplicate
+state tracking and validation conflicts.
 
 **Incorrect (double registration causes state conflicts):**
 

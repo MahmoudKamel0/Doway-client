@@ -9,15 +9,10 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default defineConfig([
-    globalIgnores(["dist", "dist-electron"]),
+    globalIgnores(["dist", "dist-electron", ".agents", "cypress.config.ts"]),
     {
         files: ["**/*.{ts,tsx,js}"],
-        extends: [
-            js.configs.recommended,
-            tseslint.configs.recommended,
-            reactHooks.configs.flat.recommended,
-            reactRefresh.configs.vite,
-        ],
+        extends: [js.configs.recommended, tseslint.configs.recommended, reactHooks.configs.flat.recommended, reactRefresh.configs.vite],
         settings: {
             "import/resolver": {
                 typescript: {
@@ -27,7 +22,7 @@ export default defineConfig([
         },
         plugins: {
             "jsx-a11y": jsxA11y,
-            import: importPlugin,
+            "import": importPlugin,
             "@tanstack/query": pluginQuery,
         },
         languageOptions: {
@@ -39,12 +34,9 @@ export default defineConfig([
             "no-debugger": "error",
             "no-var": "error",
             "prefer-const": "error",
-            eqeqeq: ["error", "always"],
+            "eqeqeq": ["error", "always"],
             "no-empty-function": "error",
-            "@typescript-eslint/no-unused-vars": [
-                "error",
-                { argsIgnorePattern: "^_" },
-            ],
+            "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
             "react/jsx-uses-react": "off",
             "react/react-in-jsx-scope": "off",
             "react/prop-types": "off",
@@ -54,12 +46,7 @@ export default defineConfig([
             "import/order": [
                 "error",
                 {
-                    groups: [
-                        "type",
-                        ["builtin", "external"],
-                        "internal",
-                        ["parent", "sibling", "index"],
-                    ],
+                    groups: ["type", ["builtin", "external"], "internal", ["parent", "sibling", "index"]],
                     pathGroups: [
                         {
                             pattern: "@components/**",
@@ -82,9 +69,9 @@ export default defineConfig([
             ],
             "import/no-unresolved": "error",
             "import/no-duplicates": "error",
-            semi: ["error", "always"],
-            quotes: ["error", "double"],
-            indent: ["error", 4],
+            "semi": ["error", "always"],
+            "quotes": ["error", "double"],
+            "indent": ["error", 4],
             "comma-dangle": ["error", "always-multiline"],
             "object-curly-spacing": ["error", "always"],
             "array-bracket-spacing": ["error", "never"],

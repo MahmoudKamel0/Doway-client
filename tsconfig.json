@@ -6,6 +6,7 @@
             "@components/*": ["./src/components/*"],
             "@config/*": ["./src/config/*"],
             "@fonts/*": ["./src/fonts/*"],
+            "@i18n/*": ["./src/i18n/*"],
             "@lib/*": ["./src/lib/*"],
             "@pages/*": ["./src/pages/*"],
             "@security/*": ["./src/security/*"],

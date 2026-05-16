@@ -7,7 +7,8 @@ tags: formcfg, useEffect, dependencies, infinite-loop
 
 ## Avoid useForm Return Object in useEffect Dependencies
 
-Adding the entire useForm return object to a useEffect dependency array causes infinite loops. Destructure only the specific methods you need.
+Adding the entire useForm return object to a useEffect dependency array causes infinite loops. Destructure only the specific methods you
+need.
 
 **Incorrect (entire form object causes infinite loop):**
 

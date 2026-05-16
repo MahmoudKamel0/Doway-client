@@ -7,7 +7,8 @@ tags: sub, useWatch, getValues, timing, subscription
 
 ## Combine useWatch with getValues for Timing Safety
 
-If `setValue()` is called before useWatch establishes its subscription, the update is missed. Combine useWatch with getValues to guarantee no updates are lost.
+If `setValue()` is called before useWatch establishes its subscription, the update is missed. Combine useWatch with getValues to guarantee
+no updates are lost.
 
 **Incorrect (setValue before subscription misses update):**
 

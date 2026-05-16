@@ -7,7 +7,8 @@ tags: sub, useFormContext, FormProvider, prop-drilling
 
 ## Use useFormContext Sparingly for Deep Nesting
 
-useFormContext eliminates prop drilling by accessing form methods via context, but creates implicit dependencies that are harder to track. Use it for deeply nested components; prefer explicit props for shallow nesting.
+useFormContext eliminates prop drilling by accessing form methods via context, but creates implicit dependencies that are harder to track.
+Use it for deeply nested components; prefer explicit props for shallow nesting.
 
 **Incorrect (useFormContext for shallow nesting):**
 
@@ -51,6 +52,7 @@ function NameInput({ register }: { register: UseFormRegister<ContactFormData> })
 ```
 
 **When to use useFormContext:**
+
 - Components nested 3+ levels deep
 - Shared components used across multiple forms
 - Complex form sections with many fields

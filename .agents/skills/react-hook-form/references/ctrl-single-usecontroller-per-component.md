@@ -7,7 +7,8 @@ tags: ctrl, useController, component-design, separation
 
 ## Use Single useController Per Component
 
-Each component should use at most one useController. Multiple useControllers in a single component cause prop name collisions and complex state management. Split into separate components instead.
+Each component should use at most one useController. Multiple useControllers in a single component cause prop name collisions and complex
+state management. Split into separate components instead.
 
 **Incorrect (multiple useControllers cause collisions):**
 

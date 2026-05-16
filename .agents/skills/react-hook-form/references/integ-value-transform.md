@@ -7,7 +7,8 @@ tags: integ, transform, value-coercion, Controller
 
 ## Transform Values at Controller Level for Type Coercion
 
-Native inputs return strings. When your form needs numbers, dates, or other types, transform values in the Controller render function rather than relying solely on `valueAsNumber` or `valueAsDate`.
+Native inputs return strings. When your form needs numbers, dates, or other types, transform values in the Controller render function rather
+than relying solely on `valueAsNumber` or `valueAsDate`.
 
 **Incorrect (valueAsNumber has edge cases):**
 
@@ -52,8 +53,8 @@ function QuantityInput({ control }: { control: Control }) {
 
 ```typescript
 const schema = z.object({
-  quantity: z.string().transform((val) => (val === '' ? null : parseInt(val, 10))),
-})
+    quantity: z.string().transform((val) => (val === "" ? null : parseInt(val, 10))),
+});
 ```
 
 Reference: [React Hook Form - Advanced Usage](https://react-hook-form.com/advanced-usage)
