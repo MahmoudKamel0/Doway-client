@@ -5,7 +5,6 @@ import { PortalRole } from "@lib/enums/roles.enum";
 import { Button } from "@components/ui/button.ui";
 import { Sidebar, SidebarBody, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuItem } from "@components/ui/sidebar.ui";
 
-
 /**
  * Renders the dashboard sidebar navigation, including branding, user info, navigation links, and logout button.
  * The sidebar adapts its content based on the current user's role and is designed for use within the dashboard layout.
@@ -26,7 +25,7 @@ export default function SidebarDashboard() {
     return (
         <Sidebar>
             {/* SidebarHeader contains the logo/branding and displays user information if available */}
-            <SidebarHeader>       
+            <SidebarHeader>
                 <div className="flex items-center gap-3">
                     <UserIcon size="20" />
                     <div className="">
@@ -49,7 +48,7 @@ export default function SidebarDashboard() {
             </SidebarHeader>
 
             {/* Sidebar body contains the main navigation links for the dashboard */}
-            <SidebarBody>       
+            <SidebarBody>
                 <SidebarMenu label="navigation">
                     {SIDEBAR_NAV_LINKS.map((item) => (
                         <SidebarMenuItem key={item.name} href={item.path} className="text-sm">
@@ -60,9 +59,9 @@ export default function SidebarDashboard() {
             </SidebarBody>
 
             {/* Sidebar footer contains the logout button allowing users to securely exit the dashboard */}
-            <SidebarFooter>       
+            <SidebarFooter>
                 <Button
-                    onClick={handleClickLogout} 
+                    onClick={handleClickLogout}
                     className="flex w-full items-center gap-3 rounded-md bg-rose-500 px-3 py-2.5 text-sm font-medium text-slate-200 transition-[background,colors] duration-150 hover:bg-rose-500/80 hover:text-slate-400"
                 >
                     <LogOutIcon />
