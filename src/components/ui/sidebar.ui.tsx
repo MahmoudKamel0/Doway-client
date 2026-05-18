@@ -64,7 +64,7 @@ export function SidebarMenuItem({ className, children, href, ...props }: Compone
 
 export function SidebarFooter({ className, children, ...props }: ComponentProps<"footer">) {
     return (
-        <footer className={cn("pb-6 pt-5", className)} {...props}>
+        <footer className={cn("pt-5 pb-6", className)} {...props}>
             {children}
         </footer>
     );

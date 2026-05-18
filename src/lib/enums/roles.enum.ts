@@ -1,4 +1,4 @@
 export const enum PortalRole {
     ADMIN = "Admin",
-    EMPLOYEE = "Employee"
+    EMPLOYEE = "Employee",
 }

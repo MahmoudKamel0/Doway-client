@@ -7,7 +7,7 @@ import SidebarDashboard from "@components/features/dashboard/sidebar.dashboard";
  */
 export default function DashboardLayout() {
     return (
-        <div className="flex h-screen overflow-hidden gap-6">
+        <div className="flex h-screen gap-6 overflow-hidden">
             <SidebarDashboard />
             <main>
                 <Outlet />

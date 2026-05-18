@@ -47,7 +47,7 @@ export default function SidebarDashboard() {
 
             {/*  */}
             <SidebarFooter>
-                <Button className="flex items-center gap-3 w-full px-3 py-2.5 rounded-md text-sm font-medium text-slate-200 hover:text-slate-400 bg-rose-500 hover:bg-rose-500/80 transition-[background,colors] duration-150">
+                <Button className="flex w-full items-center gap-3 rounded-md bg-rose-500 px-3 py-2.5 text-sm font-medium text-slate-200 transition-[background,colors] duration-150 hover:bg-rose-500/80 hover:text-slate-400">
                     <LogOutIcon />
                     logout
                 </Button>
