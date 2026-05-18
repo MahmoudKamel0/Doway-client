@@ -1,20 +1,34 @@
 import { LogOutIcon, UserIcon } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { getSidebarNavLinks } from "@lib/constants/ui/sidebar.constant";
 import { PortalRole } from "@lib/enums/roles.enum";
 import { Button } from "@components/ui/button.ui";
 import { Sidebar, SidebarBody, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuItem } from "@components/ui/sidebar.ui";
 
+
+/**
+ * Renders the dashboard sidebar navigation, including branding, user info, navigation links, and logout button.
+ * The sidebar adapts its content based on the current user's role and is designed for use within the dashboard layout.
+ *
+ * @component
+ * @returns {JSX.Element} The sidebar component for the dashboard.
+ */
 export default function SidebarDashboard() {
     const USER_NAME = "Mahmoud Kamel";
     const ROLE = PortalRole.EMPLOYEE;
     const SIDEBAR_NAV_LINKS = getSidebarNavLinks(ROLE);
+    const navigate = useNavigate();
+
+    const handleClickLogout = () => {
+        navigate("/auth/login");
+    };
 
     return (
         <Sidebar>
-            {/*  */}
-            <SidebarHeader>
+            {/* SidebarHeader contains the logo/branding and displays user information if available */}
+            <SidebarHeader>       
                 <div className="flex items-center gap-3">
-                    <UserIcon size="20" className="text-white" />
+                    <UserIcon size="20" />
                     <div className="">
                         <h2 className="tracking-white text-sm font-semibold text-white">Doway Employee MS</h2>
                         <p className="text-xs font-medium text-slate-500">Management System</p>
@@ -34,8 +48,8 @@ export default function SidebarDashboard() {
                 )}
             </SidebarHeader>
 
-            {/*  */}
-            <SidebarBody>
+            {/* Sidebar body contains the main navigation links for the dashboard */}
+            <SidebarBody>       
                 <SidebarMenu label="navigation">
                     {SIDEBAR_NAV_LINKS.map((item) => (
                         <SidebarMenuItem key={item.name} href={item.path} className="text-sm">
@@ -45,9 +59,12 @@ export default function SidebarDashboard() {
                 </SidebarMenu>
             </SidebarBody>
 
-            {/*  */}
-            <SidebarFooter>
-                <Button className="flex w-full items-center gap-3 rounded-md bg-rose-500 px-3 py-2.5 text-sm font-medium text-slate-200 transition-[background,colors] duration-150 hover:bg-rose-500/80 hover:text-slate-400">
+            {/* Sidebar footer contains the logout button allowing users to securely exit the dashboard */}
+            <SidebarFooter>       
+                <Button
+                    onClick={handleClickLogout} 
+                    className="flex w-full items-center gap-3 rounded-md bg-rose-500 px-3 py-2.5 text-sm font-medium text-slate-200 transition-[background,colors] duration-150 hover:bg-rose-500/80 hover:text-slate-400"
+                >
                     <LogOutIcon />
                     logout
                 </Button>

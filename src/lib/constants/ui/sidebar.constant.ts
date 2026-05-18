@@ -1,5 +1,5 @@
-import type { PortalRole } from "@lib/enums/roles.enum";
 import { Calendar1Icon, FileTextIcon, LayoutGridIcon, UserIcon, DollarSignIcon, SettingsIcon } from "lucide-react";
+import { PortalRole } from "@lib/enums/roles.enum";
 
 export const getSidebarNavLinks = (role: PortalRole) =>
     [
@@ -9,8 +9,8 @@ export const getSidebarNavLinks = (role: PortalRole) =>
             icon: LayoutGridIcon,
         },
         {
-            name: role === "Admin" ? "Admin" : "Employees",
-            path: role === "Admin" ? "/admin" : "/employees",
+            name: role === PortalRole.ADMIN ? "Admin" : "Employees",
+            path: role === PortalRole.ADMIN ? "/admin" : "/employees",
             icon: UserIcon,
         },
         {

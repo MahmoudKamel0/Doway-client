@@ -35,7 +35,7 @@ export function SidebarBody({ className, children, ...props }: ComponentProps<"s
 export function SidebarMenu({ className, children, label, ...props }: ComponentProps<"ul"> & { label?: string }) {
     return (
         <ul className={cn("", className)} {...props}>
-            {label && <span className="text-[10px] font-semibold tracking-tight text-slate-500 uppercase">{label}</span>}
+            {label && <li className="my-2 block text-[10px] font-semibold tracking-tight text-slate-500 uppercase">{label}</li>}
             {children}
         </ul>
     );

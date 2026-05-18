@@ -9,7 +9,7 @@ export default function DashboardLayout() {
     return (
         <div className="flex h-screen gap-6 overflow-hidden">
             <SidebarDashboard />
-            <main>
+            <main className="h-full flex-auto overflow-y-auto">
                 <Outlet />
             </main>
         </div>
