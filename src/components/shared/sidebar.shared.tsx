@@ -53,7 +53,7 @@ export default function SidebarDashboard() {
             <SidebarBody>
                 <SidebarMenu label="navigation">
                     {SIDEBAR_NAV_LINKS.map((item) => (
-                        <SidebarMenuItem key={item.name} href={item.path} className="text-sm">
+                        <SidebarMenuItem key={item.name} to={item.path} className="text-sm">
                             <item.icon className="size-4" /> {item.name}
                         </SidebarMenuItem>
                     ))}
