@@ -41,11 +41,11 @@ export function SidebarMenu({ className, children, label, ...props }: ComponentP
     );
 }
 
-export function SidebarMenuItem({ className, children, href, ...props }: ComponentProps<"a">) {
+export function SidebarMenuItem({ className, children, to, ...props }: ComponentProps<typeof NavLink>) {
     return (
         <li>
             <NavLink
-                to={href}
+                to={to}
                 className={({ isActive }) =>
                     cn(
                         "relative flex items-center gap-2 rounded-sm p-2",
