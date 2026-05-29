@@ -5,6 +5,10 @@ import { PortalRole } from "@lib/enums/roles.enum";
 import { Button } from "@components/ui/button.ui";
 import { Sidebar, SidebarBody, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuItem } from "@components/ui/sidebar.ui";
 
+const USER_NAME = "Mahmoud Kamel";
+const ROLE = PortalRole.EMPLOYEE;
+const SIDEBAR_NAV_LINKS = getSidebarNavLinks(ROLE);
+
 /**
  * Renders the dashboard sidebar navigation, including branding, user info, navigation links, and logout button.
  * The sidebar adapts its content based on the current user's role and is designed for use within the dashboard layout.
@@ -12,10 +16,8 @@ import { Sidebar, SidebarBody, SidebarFooter, SidebarHeader, SidebarMenu, Sideba
  * @component
  * @returns {JSX.Element} The sidebar component for the dashboard.
  */
+
 export default function SidebarDashboard() {
-    const USER_NAME = "Mahmoud Kamel";
-    const ROLE = PortalRole.EMPLOYEE;
-    const SIDEBAR_NAV_LINKS = getSidebarNavLinks(ROLE);
     const navigate = useNavigate();
 
     const handleClickLogout = () => {
