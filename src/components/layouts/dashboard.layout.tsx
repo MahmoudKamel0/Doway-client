@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import SidebarDashboard from "@components/features/dashboard/sidebar.dashboard";
+import SidebarDashboard from "@components/shared/sidebar.shared";
 
 /**
  * Dashboard layout component.
@@ -7,9 +7,9 @@ import SidebarDashboard from "@components/features/dashboard/sidebar.dashboard";
  */
 export default function DashboardLayout() {
     return (
-        <div className="flex h-screen gap-6 overflow-hidden">
+        <div className="flex h-screen overflow-hidden">
             <SidebarDashboard />
-            <main className="h-full flex-auto overflow-y-auto">
+            <main className="h-full flex-auto overflow-y-auto p-6">
                 <Outlet />
             </main>
         </div>
