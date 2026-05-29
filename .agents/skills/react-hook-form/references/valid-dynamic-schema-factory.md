@@ -7,7 +7,8 @@ tags: valid, schema, factory, dynamic, conditional
 
 ## Use Schema Factory for Dynamic Validation
 
-When validation rules depend on runtime context (user role, feature flags), use a factory function to create schemas. This keeps schema creation outside the render cycle while allowing dynamic rules.
+When validation rules depend on runtime context (user role, feature flags), use a factory function to create schemas. This keeps schema
+creation outside the render cycle while allowing dynamic rules.
 
 **Incorrect (schema recreated in component based on props):**
 

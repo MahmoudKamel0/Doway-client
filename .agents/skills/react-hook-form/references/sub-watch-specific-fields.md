@@ -7,7 +7,8 @@ tags: sub, watch, specific-fields, re-renders
 
 ## Watch Specific Fields Instead of Entire Form
 
-Calling `watch()` without arguments subscribes to ALL form fields, causing re-renders on any field change. Always specify the field names you need.
+Calling `watch()` without arguments subscribes to ALL form fields, causing re-renders on any field change. Always specify the field names
+you need.
 
 **Incorrect (watches all fields, re-renders on any change):**
 

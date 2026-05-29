@@ -7,22 +7,24 @@ tags: server, rsc, ssr, concurrency, security, state
 
 ## Avoid Shared Module State for Request Data
 
-For React Server Components and client components rendered during SSR, avoid using mutable module-level variables to share request-scoped data. Server renders can run concurrently in the same process. If one render writes to shared module state and another render reads it, you can get race conditions, cross-request contamination, and security bugs where one user's data appears in another user's response.
+For React Server Components and client components rendered during SSR, avoid using mutable module-level variables to share request-scoped
+data. Server renders can run concurrently in the same process. If one render writes to shared module state and another render reads it, you
+can get race conditions, cross-request contamination, and security bugs where one user's data appears in another user's response.
 
 Treat module scope on the server as process-wide shared memory, not request-local state.
 
 **Incorrect (request data leaks across concurrent renders):**
 
 ```tsx
-let currentUser: User | null = null
+let currentUser: User | null = null;
 
 export default async function Page() {
-  currentUser = await auth()
-  return <Dashboard />
+    currentUser = await auth();
+    return <Dashboard />;
 }
 
 async function Dashboard() {
-  return <div>{currentUser?.name}</div>
+    return <div>{currentUser?.name}</div>;
 }
 ```
 
@@ -32,12 +34,12 @@ If two requests overlap, request A can set `currentUser`, then request B overwri
 
 ```tsx
 export default async function Page() {
-  const user = await auth()
-  return <Dashboard user={user} />
+    const user = await auth();
+    return <Dashboard user={user} />;
 }
 
 function Dashboard({ user }: { user: User | null }) {
-  return <div>{user?.name}</div>
+    return <div>{user?.name}</div>;
 }
 ```
 

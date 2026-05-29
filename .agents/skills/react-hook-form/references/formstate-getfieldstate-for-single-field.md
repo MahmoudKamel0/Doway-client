@@ -7,7 +7,8 @@ tags: formstate, getFieldState, single-field, no-subscription
 
 ## Use getFieldState for Single Field State Access
 
-When you need to check a single field's state (dirty, touched, error) without subscribing to updates, use `getFieldState()`. It returns current state without creating a subscription.
+When you need to check a single field's state (dirty, touched, error) without subscribing to updates, use `getFieldState()`. It returns
+current state without creating a subscription.
 
 **Incorrect (useFormState creates subscription for one-time check):**
 
@@ -43,6 +44,7 @@ function MyForm() {
 ```
 
 **When to use each:**
+
 - `useFormState`: Need to react to state changes (display updates)
 - `getFieldState`: Need current state at a point in time (conditional logic)
 

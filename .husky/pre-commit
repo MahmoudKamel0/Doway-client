@@ -1,0 +1,9 @@
+echo "------------------------------------"
+echo "waiting running code formatter"
+echo "------------------------------------"
+yarn format
+
+echo "------------------------------------"
+echo "waiting running linter to check for code issues..."
+echo "------------------------------------"
+yarn lint

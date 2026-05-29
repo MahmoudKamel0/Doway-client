@@ -7,7 +7,8 @@ tags: array, useFieldArray, key, react-key
 
 ## Use field.id as Key in useFieldArray Maps
 
-useFieldArray generates a unique `id` for each field. Using array index as key causes React to lose track of component identity when items are reordered, removed, or inserted.
+useFieldArray generates a unique `id` for each field. Using array index as key causes React to lose track of component identity when items
+are reordered, removed, or inserted.
 
 **Incorrect (index as key causes state corruption):**
 

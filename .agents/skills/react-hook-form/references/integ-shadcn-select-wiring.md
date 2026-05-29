@@ -7,7 +7,8 @@ tags: integ, shadcn, select, radix
 
 ## Wire shadcn Select with onValueChange Instead of Spread
 
-shadcn's Select (built on Radix) uses `onValueChange` instead of `onChange`. Spreading field props directly doesn't work. Manually wire the value change handler.
+shadcn's Select (built on Radix) uses `onValueChange` instead of `onChange`. Spreading field props directly doesn't work. Manually wire the
+value change handler.
 
 **Incorrect (spread doesn't work with Radix Select):**
 

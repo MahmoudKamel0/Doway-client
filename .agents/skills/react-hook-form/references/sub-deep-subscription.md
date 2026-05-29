@@ -7,7 +7,8 @@ tags: sub, subscription, component-tree, re-renders
 
 ## Subscribe Deep in Component Tree Where Data Is Needed
 
-Subscribe to form values as deep in the component tree as possible, where the data is actually used. This isolates re-renders to the specific component that needs the value.
+Subscribe to form values as deep in the component tree as possible, where the data is actually used. This isolates re-renders to the
+specific component that needs the value.
 
 **Incorrect (subscription at parent re-renders all children):**
 

@@ -7,7 +7,8 @@ tags: valid, resolver, inline-validation, schema
 
 ## Prefer Resolver Over Inline Validation for Complex Rules
 
-Inline validation rules in `register()` are convenient for simple cases, but resolvers (Zod, Yup) provide better type safety, centralized logic, and cross-field validation capabilities.
+Inline validation rules in `register()` are convenient for simple cases, but resolvers (Zod, Yup) provide better type safety, centralized
+logic, and cross-field validation capabilities.
 
 **Incorrect (complex inline validation scattered across inputs):**
 

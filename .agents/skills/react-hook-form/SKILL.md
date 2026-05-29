@@ -1,15 +1,20 @@
 ---
 name: react-hook-form
-description: React Hook Form performance optimization for client-side form validation using useForm, useWatch, useController, and useFieldArray. This skill should be used when building client-side controlled forms with React Hook Form library. This skill does NOT cover React 19 Server Actions, useActionState, or server-side form handling (use react-19 skill for those).
+description:
+    React Hook Form performance optimization for client-side form validation using useForm, useWatch, useController, and useFieldArray. This
+    skill should be used when building client-side controlled forms with React Hook Form library. This skill does NOT cover React 19 Server
+    Actions, useActionState, or server-side form handling (use react-19 skill for those).
 ---
 
 # React Hook Form Best Practices
 
-Comprehensive performance optimization guide for React Hook Form applications. Contains 41 rules across 8 categories, prioritized by impact to guide form development, automated refactoring, and code generation.
+Comprehensive performance optimization guide for React Hook Form applications. Contains 41 rules across 8 categories, prioritized by impact
+to guide form development, automated refactoring, and code generation.
 
 ## When to Apply
 
 Reference these guidelines when:
+
 - Writing new forms with React Hook Form
 - Configuring useForm options (mode, defaultValues, validation)
 - Subscribing to form values with watch/useWatch
@@ -19,16 +24,16 @@ Reference these guidelines when:
 
 ## Rule Categories by Priority
 
-| Priority | Category | Impact | Prefix |
-|----------|----------|--------|--------|
-| 1 | Form Configuration | CRITICAL | `formcfg-` |
-| 2 | Field Subscription | CRITICAL | `sub-` |
-| 3 | Controlled Components | HIGH | `ctrl-` |
-| 4 | Validation Patterns | HIGH | `valid-` |
-| 5 | Field Arrays | MEDIUM-HIGH | `array-` |
-| 6 | State Management | MEDIUM | `formstate-` |
-| 7 | Integration Patterns | MEDIUM | `integ-` |
-| 8 | Advanced Patterns | LOW | `adv-` |
+| Priority | Category              | Impact      | Prefix       |
+| -------- | --------------------- | ----------- | ------------ |
+| 1        | Form Configuration    | CRITICAL    | `formcfg-`   |
+| 2        | Field Subscription    | CRITICAL    | `sub-`       |
+| 3        | Controlled Components | HIGH        | `ctrl-`      |
+| 4        | Validation Patterns   | HIGH        | `valid-`     |
+| 5        | Field Arrays          | MEDIUM-HIGH | `array-`     |
+| 6        | State Management      | MEDIUM      | `formstate-` |
+| 7        | Integration Patterns  | MEDIUM      | `integ-`     |
+| 8        | Advanced Patterns     | LOW         | `adv-`       |
 
 ## Quick Reference
 

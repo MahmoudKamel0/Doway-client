@@ -7,7 +7,8 @@ tags: formcfg, revalidate-mode, re-renders, useForm
 
 ## Set reValidateMode to onBlur for Post-Submit Performance
 
-After form submission, `reValidateMode` controls when fields re-validate. The default `onChange` causes validation on every keystroke after first submit. Use `onBlur` or `onSubmit` for better post-submission performance.
+After form submission, `reValidateMode` controls when fields re-validate. The default `onChange` causes validation on every keystroke after
+first submit. Use `onBlur` or `onSubmit` for better post-submission performance.
 
 **Incorrect (re-validates on every keystroke after submit):**
 

@@ -7,7 +7,8 @@ tags: formstate, isValid, onSubmit, validation-mode
 
 ## Avoid isValid with onSubmit Mode for Button State
 
-When using `mode: 'onSubmit'`, accessing `isValid` forces validation on every render to determine the current validity state. This defeats the purpose of deferred validation.
+When using `mode: 'onSubmit'`, accessing `isValid` forces validation on every render to determine the current validity state. This defeats
+the purpose of deferred validation.
 
 **Incorrect (isValid triggers validation despite onSubmit mode):**
 
@@ -50,9 +51,11 @@ function RegistrationForm() {
 **Alternative (use onChange mode if real-time validation needed):**
 
 ```typescript
-const { formState: { isValid } } = useForm({
-  mode: 'onChange',  // Explicit: validation runs on every change
-})
+const {
+    formState: { isValid },
+} = useForm({
+    mode: "onChange", // Explicit: validation runs on every change
+});
 ```
 
 Reference: [useForm - mode](https://react-hook-form.com/docs/useform)
